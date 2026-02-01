@@ -1,0 +1,232 @@
+{
+  "current_beliefs": {
+    "active_hypotheses": [],
+    "system_health_score": 1.0,
+    "uncertainty_level": 0.0,
+    "last_updated": 1769926040856
+  },
+  "active_interventions": [
+    {
+      "success": true,
+      "intervention_id": "a46a4720-db29-4d56-9b3d-0908df8780da",
+      "executed_at": 1769925845263,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "intervention_id": "d8a8d3cb-aa76-4bed-b7e5-bd1914509e38",
+      "executed_at": 1769925935580,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "intervention_id": "32f27657-8932-47a0-a8f8-b352ce2199ba",
+      "executed_at": 1769926025797,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    }
+  ],
+  "recent_observations": {
+    "transactions": [
+      {
+        "transaction_id": "txn_1769926036904_390341",
+        "timestamp": 1769926036904,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 173,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_15",
+        "amount": 728.5122674517055,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390342",
+        "timestamp": 1769926036954,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 137,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_7",
+        "amount": 197.81780406577477,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390343",
+        "timestamp": 1769926037004,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 296,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_13",
+        "amount": 965.9201542621942,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390344",
+        "timestamp": 1769926037054,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 193,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_9",
+        "amount": 396.86473549452506,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390345",
+        "timestamp": 1769926037104,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 262,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_13",
+        "amount": 476.09945430663805,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390346",
+        "timestamp": 1769926037154,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 221,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_9",
+        "amount": 824.1651307118399,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390347",
+        "timestamp": 1769926037204,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 137,
+        "retry_count": 1,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_20",
+        "amount": 326.37328046177294,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390348",
+        "timestamp": 1769926037254,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 199,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_1",
+        "amount": 217.25296570560977,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390349",
+        "timestamp": 1769926037304,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 162,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_20",
+        "amount": 549.8542338981237,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769926036904_390350",
+        "timestamp": 1769926037354,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 250,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_9",
+        "amount": 85.98005621570869,
+        "geography": "ASIA"
+      }
+    ],
+    "time_range_ms": [
+      1769926036904,
+      1769926040856
+    ],
+    "aggregate_stats": {
+      "total_transactions": 1527,
+      "success_count": 1398,
+      "soft_fail_count": 90,
+      "hard_fail_count": 39,
+      "success_rate": 0.9155206286836935,
+      "avg_latency_ms": 188.81859855926655,
+      "p95_latency_ms": 315.0,
+      "p99_latency_ms": 387.0,
+      "avg_retry_count": 0.1466928618205632,
+      "unique_issuers": 4,
+      "unique_methods": 1
+    }
+  },
+  "model_parameters": {
+    "anomaly_threshold": 2.0,
+    "min_confidence_for_action": 0.7,
+    "max_blast_radius_for_autonomy": 0.3,
+    "learning_rate": 0.1,
+    "conservativeness_level": 0.5
+  },
+  "last_updated": 1769926040856,
+  "nrv_projection": 0.0,
+  "z_score": 0.0,
+  "risk_acknowledged": false
+}

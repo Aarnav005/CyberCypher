@@ -1,0 +1,1178 @@
+2026-02-01 11:32:34,966 - __main__ - INFO - Initializing continuous stream components...
+2026-02-01 11:32:34,967 - payops_ai.streaming.drift_engine - INFO - Initialized StochasticDriftEngine with theta=0.1, sigma=0.05
+2026-02-01 11:32:34,967 - payops_ai.streaming.drift_engine - INFO - Added issuer HDFC: success=95.00%, latency=200ms, retry=5.00%
+2026-02-01 11:32:34,967 - payops_ai.streaming.drift_engine - INFO - Added issuer ICICI: success=97.00%, latency=180ms, retry=3.00%
+2026-02-01 11:32:34,968 - payops_ai.streaming.drift_engine - INFO - Added issuer AXIS: success=93.00%, latency=220ms, retry=7.00%
+2026-02-01 11:32:34,968 - payops_ai.streaming.drift_engine - INFO - Added issuer SBI: success=94.00%, latency=210ms, retry=6.00%
+2026-02-01 11:32:34,968 - payops_ai.streaming.drift_engine - INFO - Set time scale to 1.0x
+2026-02-01 11:32:34,968 - payops_ai.streaming.continuous_generator - INFO - Initialized ContinuousPaymentGenerator: rate=20.0 txns/s, buffer=1000
+2026-02-01 11:32:34,968 - payops_ai.streaming.feedback_controller - INFO - Initialized FeedbackController
+2026-02-01 11:32:34,969 - payops_ai.memory.incident_store - INFO - Loaded 3 example historical incidents
+2026-02-01 11:32:34,970 - payops_ai.memory.state_manager - WARNING - No saved state found
+2026-02-01 11:32:34,971 - payops_ai.orchestrator - INFO - Agent initialized (simulation_mode=True, RAG=disabled, state_persistence=enabled, audit_log=enabled, safety_constraints=enabled)
+2026-02-01 11:32:34,971 - payops_ai.streaming.continuous_loop - INFO - Initialized ContinuousAgentLoop: cycle_interval=15.0s, loop_rate=10.0Hz
+2026-02-01 11:32:34,971 - __main__ - INFO - Starting continuous loop...
+2026-02-01 11:32:34,971 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:32:34,971 - payops_ai.streaming.continuous_loop - INFO - Starting Continuous Agent Loop
+2026-02-01 11:32:34,971 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:32:34,972 - payops_ai.streaming.continuous_loop - INFO - Cycle interval: 15.0s
+2026-02-01 11:32:34,972 - payops_ai.streaming.continuous_loop - INFO - Transaction rate: 20.0 txns/s
+2026-02-01 11:32:34,972 - payops_ai.streaming.continuous_loop - INFO - Issuers: HDFC, ICICI, AXIS, SBI
+2026-02-01 11:32:34,972 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:32:34,981 - websockets.server - INFO - server listening on 127.0.0.1:8765
+2026-02-01 11:32:34,981 - payops_ai.streaming.ws_broadcaster - INFO - WebSocket broadcaster listening on ws://127.0.0.1:8765
+2026-02-01 11:32:35,599 - websockets.server - INFO - connection open
+2026-02-01 11:32:35,599 - payops_ai.streaming.ws_broadcaster - INFO - WS client connected: ('127.0.0.1', 64746)
+2026-02-01 11:32:36,103 - websockets.server - INFO - connection open
+2026-02-01 11:32:36,103 - payops_ai.streaming.ws_broadcaster - INFO - WS client connected: ('127.0.0.1', 64985)
+2026-02-01 11:32:46,106 - payops_ai.streaming.ws_broadcaster - INFO - WS client disconnected: ('127.0.0.1', 64746)
+2026-02-01 11:32:46,106 - payops_ai.streaming.ws_broadcaster - INFO - WS client disconnected: ('127.0.0.1', 64985)
+2026-02-01 11:32:46,890 - websockets.server - INFO - connection open
+2026-02-01 11:32:46,892 - payops_ai.streaming.ws_broadcaster - INFO - WS client connected: ('127.0.0.1', 61049)
+2026-02-01 11:32:49,843 - websockets.server - INFO - connection open
+2026-02-01 11:32:49,843 - payops_ai.streaming.ws_broadcaster - INFO - WS client connected: ('127.0.0.1', 62356)
+2026-02-01 11:32:50,011 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:32:50,011 - payops_ai.streaming.continuous_loop - INFO - CYCLE 1 - Elapsed: 15.0s
+2026-02-01 11:32:50,011 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:32:50,012 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=100.00%, latency=358ms, retry=0.00%
+2026-02-01 11:32:50,012 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=172ms, retry=5.67%
+2026-02-01 11:32:50,012 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=84.05%, latency=50ms, retry=0.00%
+2026-02-01 11:32:50,012 - payops_ai.streaming.continuous_loop - INFO - SBI: success=100.00%, latency=192ms, retry=0.00%
+2026-02-01 11:32:50,013 - payops_ai.orchestrator - INFO - === Cycle 1 starting ===
+2026-02-01 11:32:50,013 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:32:50,016 - payops_ai.orchestrator - INFO - Observed 2004 transactions, success rate: 89.47%
+2026-02-01 11:32:50,017 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:32:50,025 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:32:50,025 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:32:50,025 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:32:50,025 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:32:50,026 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:32:50,026 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:32:50,027 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:32:50,027 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:32:50,027 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:32:50,027 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:32:50,028 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:32:50,028 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:32:50,028 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:32:50,028 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:32:50,029 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:32:50,034 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925770013
+2026-02-01 11:32:50,034 - payops_ai.orchestrator - INFO - === Cycle 1 complete ===
+
+2026-02-01 11:33:05,036 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:33:05,037 - payops_ai.streaming.continuous_loop - INFO - CYCLE 2 - Elapsed: 30.1s
+2026-02-01 11:33:05,037 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:33:05,037 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=97.18%, latency=95ms, retry=4.87%
+2026-02-01 11:33:05,037 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=175ms, retry=7.43%
+2026-02-01 11:33:05,037 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=68.63%, latency=135ms, retry=0.00%
+2026-02-01 11:33:05,038 - payops_ai.streaming.continuous_loop - INFO - SBI: success=96.55%, latency=171ms, retry=0.00%
+2026-02-01 11:33:05,038 - payops_ai.orchestrator - INFO - === Cycle 2 starting ===
+2026-02-01 11:33:05,038 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:33:05,040 - payops_ai.orchestrator - INFO - Observed 1989 transactions, success rate: 88.08%
+2026-02-01 11:33:05,040 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:33:05,043 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:33:05,043 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:33:05,043 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:33:05,044 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:33:05,044 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:33:05,044 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:33:05,045 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:33:05,045 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:33:05,045 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:33:05,045 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:33:05,045 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:33:05,045 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:33:05,046 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:33:05,046 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:33:05,046 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:33:05,070 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925785038
+2026-02-01 11:33:05,070 - payops_ai.orchestrator - INFO - === Cycle 2 complete ===
+
+2026-02-01 11:33:20,147 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:33:20,147 - payops_ai.streaming.continuous_loop - INFO - CYCLE 3 - Elapsed: 45.1s
+2026-02-01 11:33:20,148 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:33:20,148 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=88.17%, latency=50ms, retry=7.44%
+2026-02-01 11:33:20,148 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=262ms, retry=2.84%
+2026-02-01 11:33:20,148 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=92.40%, latency=191ms, retry=9.55%
+2026-02-01 11:33:20,149 - payops_ai.streaming.continuous_loop - INFO - SBI: success=100.00%, latency=186ms, retry=4.78%
+2026-02-01 11:33:20,149 - payops_ai.orchestrator - INFO - === Cycle 3 starting ===
+2026-02-01 11:33:20,149 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:33:20,153 - payops_ai.orchestrator - INFO - Observed 1972 transactions, success rate: 91.02%
+2026-02-01 11:33:20,153 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:33:20,160 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:33:20,161 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:33:20,161 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:33:20,161 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:33:20,161 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:33:20,162 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:33:20,162 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:33:20,162 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:33:20,163 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:33:20,163 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:33:20,163 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:33:20,164 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:33:20,164 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:33:20,165 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:33:20,165 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:33:20,185 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925800149
+2026-02-01 11:33:20,185 - payops_ai.orchestrator - INFO - === Cycle 3 complete ===
+
+2026-02-01 11:33:35,025 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:33:35,026 - payops_ai.streaming.continuous_loop - INFO - STATUS UPDATE - Elapsed: 60.0s
+2026-02-01 11:33:35,026 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:33:35,026 - payops_ai.streaming.continuous_loop - INFO - Cycles completed: 3
+2026-02-01 11:33:35,026 - payops_ai.streaming.continuous_loop - INFO - Total transactions: 76996
+2026-02-01 11:33:35,026 - payops_ai.streaming.continuous_loop - INFO - Buffer size: 1000
+2026-02-01 11:33:35,027 - payops_ai.streaming.continuous_loop - INFO - Active interventions: 0
+2026-02-01 11:33:35,027 - payops_ai.streaming.continuous_loop - INFO - 
+Issuer States:
+2026-02-01 11:33:35,027 - payops_ai.streaming.continuous_loop - INFO -   HDFC: success=96.36%, latency=271ms, retry=5.04%
+2026-02-01 11:33:35,027 - payops_ai.streaming.continuous_loop - INFO -   ICICI: success=100.00%, latency=213ms, retry=0.00%
+2026-02-01 11:33:35,027 - payops_ai.streaming.continuous_loop - INFO -   AXIS: success=100.00%, latency=137ms, retry=12.67%
+2026-02-01 11:33:35,028 - payops_ai.streaming.continuous_loop - INFO -   SBI: success=100.00%, latency=184ms, retry=6.73%
+2026-02-01 11:33:35,028 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+
+2026-02-01 11:33:35,136 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:33:35,137 - payops_ai.streaming.continuous_loop - INFO - CYCLE 4 - Elapsed: 60.2s
+2026-02-01 11:33:35,137 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:33:35,137 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=97.12%, latency=50ms, retry=14.85%
+2026-02-01 11:33:35,137 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=184ms, retry=3.69%
+2026-02-01 11:33:35,138 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=82.40%, latency=259ms, retry=0.00%
+2026-02-01 11:33:35,138 - payops_ai.streaming.continuous_loop - INFO - SBI: success=61.83%, latency=154ms, retry=26.73%
+2026-02-01 11:33:35,138 - payops_ai.orchestrator - INFO - === Cycle 4 starting ===
+2026-02-01 11:33:35,138 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:33:35,140 - payops_ai.orchestrator - INFO - Observed 1529 transactions, success rate: 91.96%
+2026-02-01 11:33:35,140 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:33:35,142 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:33:35,143 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:33:35,143 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:33:35,143 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:33:35,143 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:33:35,143 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:33:35,144 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:33:35,144 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:33:35,144 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:33:35,144 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:33:35,144 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:33:35,145 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:33:35,145 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:33:35,145 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:33:35,145 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:33:35,176 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925815138
+2026-02-01 11:33:35,176 - payops_ai.orchestrator - INFO - === Cycle 4 complete ===
+
+2026-02-01 11:33:50,173 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:33:50,173 - payops_ai.streaming.continuous_loop - INFO - CYCLE 5 - Elapsed: 75.2s
+2026-02-01 11:33:50,173 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:33:50,174 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=90.20%, latency=366ms, retry=1.19%
+2026-02-01 11:33:50,174 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=144ms, retry=0.00%
+2026-02-01 11:33:50,174 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=65ms, retry=0.00%
+2026-02-01 11:33:50,174 - payops_ai.streaming.continuous_loop - INFO - SBI: success=97.53%, latency=190ms, retry=20.00%
+2026-02-01 11:33:50,174 - payops_ai.orchestrator - INFO - === Cycle 5 starting ===
+2026-02-01 11:33:50,174 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:33:50,176 - payops_ai.orchestrator - INFO - Observed 1523 transactions, success rate: 93.43%
+2026-02-01 11:33:50,176 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:33:50,179 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:33:50,179 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:33:50,179 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:33:50,179 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:33:50,179 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:33:50,180 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:33:50,180 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:33:50,180 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:33:50,180 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:33:50,180 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:33:50,180 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:33:50,181 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:33:50,181 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:33:50,181 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:33:50,181 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:33:50,196 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925830174
+2026-02-01 11:33:50,196 - payops_ai.orchestrator - INFO - === Cycle 5 complete ===
+
+2026-02-01 11:34:05,253 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:34:05,253 - payops_ai.streaming.continuous_loop - INFO - CYCLE 6 - Elapsed: 90.3s
+2026-02-01 11:34:05,254 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:34:05,254 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=100.00%, latency=50ms, retry=6.74%
+2026-02-01 11:34:05,254 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=88.29%, latency=285ms, retry=2.49%
+2026-02-01 11:34:05,254 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=246ms, retry=0.00%
+2026-02-01 11:34:05,254 - payops_ai.streaming.continuous_loop - INFO - SBI: success=73.96%, latency=233ms, retry=15.53%
+2026-02-01 11:34:05,254 - payops_ai.orchestrator - INFO - === Cycle 6 starting ===
+2026-02-01 11:34:05,255 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:34:05,256 - payops_ai.orchestrator - INFO - Observed 1532 transactions, success rate: 90.27%
+2026-02-01 11:34:05,257 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:34:05,259 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:34:05,259 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:34:05,259 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:34:05,260 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:34:05,260 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:34:05,260 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:34:05,260 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:34:05,261 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 11:34:05,261 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 11:34:05,261 - payops_ai.orchestrator - INFO - Decision: ACT
+2026-02-01 11:34:05,262 - payops_ai.orchestrator - INFO - Selected: alert_ops on ops_team
+2026-02-01 11:34:05,262 - payops_ai.decision.nrv_calculator - INFO - NRV Calculation: alert_ops on ops_team = $-5.00 (recovery=$0.00, cost=$5.00, latency_penalty=$0.00)
+2026-02-01 11:34:05,263 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:34:05,263 - payops_ai.action.pre_mortem - INFO - Pre-Mortem Analysis: alert_ops - Risk Score: 0.00, Acceptable: True, Scenarios: 3
+2026-02-01 11:34:05,264 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 11:34:05,264 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 11:34:05,264 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 11:34:05,264 - payops_ai.action.executor - INFO - Pre-Mortem: Risk Score=0.00, Acceptable=True
+2026-02-01 11:34:05,264 - payops_ai.action.executor - INFO - [SIMULATION] Would execute alert_ops on ops_team
+2026-02-01 11:34:05,264 - payops_ai.orchestrator - INFO - Executed intervention a46a4720-db29-4d56-9b3d-0908df8780da
+2026-02-01 11:34:05,267 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:34:05,267 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:34:05,267 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:34:05,267 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+Detected anomaly with significant deviation. Recommending alert_ops on ops_team (NRV=$-5.00).
+
+=== ACTION_JSON ===
+{
+  "should_act": true,
+  "action_type": "alert_ops",
+  "target": "ops_team",
+  "parameters": {
+    "severity": "low",
+    "reason": "minimum_action_frequency",
+    "message": "No anomalies detected but minimum action frequency rule triggered"
+  },
+  "confidence": 1.0,
+  "nrv": -5.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:34:05,268 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:34:05,288 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925845254
+2026-02-01 11:34:05,288 - payops_ai.orchestrator - INFO - === Cycle 6 complete ===
+
+2026-02-01 11:34:05,289 - payops_ai.streaming.feedback_controller - INFO - Applied intervention: alert_ops on ops_team for 300s
+2026-02-01 11:34:05,289 - payops_ai.streaming.continuous_loop - INFO - Applied intervention: alert_ops on ops_team
+2026-02-01 11:34:05,289 - payops_ai.streaming.continuous_loop - INFO - 
+1 active intervention(s):
+  1. alert_ops on ops_team (300s remaining)
+2026-02-01 11:34:20,294 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:34:20,294 - payops_ai.streaming.continuous_loop - INFO - CYCLE 7 - Elapsed: 105.3s
+2026-02-01 11:34:20,295 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:34:20,295 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=94.81%, latency=226ms, retry=0.00%
+2026-02-01 11:34:20,295 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=197ms, retry=0.00%
+2026-02-01 11:34:20,295 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=72.94%, latency=238ms, retry=7.62%
+2026-02-01 11:34:20,295 - payops_ai.streaming.continuous_loop - INFO - SBI: success=79.87%, latency=250ms, retry=17.38%
+2026-02-01 11:34:20,295 - payops_ai.orchestrator - INFO - === Cycle 7 starting ===
+2026-02-01 11:34:20,296 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:34:20,297 - payops_ai.orchestrator - INFO - Observed 1522 transactions, success rate: 91.00%
+2026-02-01 11:34:20,298 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:34:20,300 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:34:20,300 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:34:20,300 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:34:20,300 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:34:20,301 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:34:20,301 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:34:20,301 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:34:20,301 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:34:20,302 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:34:20,302 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:34:20,302 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:34:20,303 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:34:20,303 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:34:20,304 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:34:20,304 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:34:20,340 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925860295
+2026-02-01 11:34:20,340 - payops_ai.orchestrator - INFO - === Cycle 7 complete ===
+
+2026-02-01 11:34:20,340 - payops_ai.streaming.continuous_loop - INFO - 
+1 active intervention(s):
+  1. alert_ops on ops_team (285s remaining)
+2026-02-01 11:34:35,119 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:34:35,119 - payops_ai.streaming.continuous_loop - INFO - STATUS UPDATE - Elapsed: 120.1s
+2026-02-01 11:34:35,119 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:34:35,119 - payops_ai.streaming.continuous_loop - INFO - Cycles completed: 7
+2026-02-01 11:34:35,119 - payops_ai.streaming.continuous_loop - INFO - Total transactions: 163007
+2026-02-01 11:34:35,120 - payops_ai.streaming.continuous_loop - INFO - Buffer size: 1000
+2026-02-01 11:34:35,120 - payops_ai.streaming.continuous_loop - INFO - Active interventions: 1
+2026-02-01 11:34:35,120 - payops_ai.streaming.continuous_loop - INFO - 
+Issuer States:
+2026-02-01 11:34:35,120 - payops_ai.streaming.continuous_loop - INFO -   HDFC: success=71.56%, latency=200ms, retry=3.01%
+2026-02-01 11:34:35,120 - payops_ai.streaming.continuous_loop - INFO -   ICICI: success=78.66%, latency=334ms, retry=48.55%
+2026-02-01 11:34:35,120 - payops_ai.streaming.continuous_loop - INFO -   AXIS: success=100.00%, latency=50ms, retry=7.28%
+2026-02-01 11:34:35,121 - payops_ai.streaming.continuous_loop - INFO -   SBI: success=100.00%, latency=154ms, retry=0.00%
+2026-02-01 11:34:35,121 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+
+2026-02-01 11:34:35,336 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:34:35,337 - payops_ai.streaming.continuous_loop - INFO - CYCLE 8 - Elapsed: 120.4s
+2026-02-01 11:34:35,337 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:34:35,337 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=89.80%, latency=50ms, retry=2.00%
+2026-02-01 11:34:35,337 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=222ms, retry=20.00%
+2026-02-01 11:34:35,337 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=97.76%, latency=50ms, retry=1.70%
+2026-02-01 11:34:35,337 - payops_ai.streaming.continuous_loop - INFO - SBI: success=93.77%, latency=252ms, retry=20.00%
+2026-02-01 11:34:35,337 - payops_ai.orchestrator - INFO - === Cycle 8 starting ===
+2026-02-01 11:34:35,338 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:34:35,339 - payops_ai.orchestrator - INFO - Observed 1527 transactions, success rate: 89.52%
+2026-02-01 11:34:35,340 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:34:35,342 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:34:35,342 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:34:35,342 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:34:35,343 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:34:35,343 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:34:35,343 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:34:35,344 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:34:35,344 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:34:35,344 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:34:35,344 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:34:35,344 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:34:35,345 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:34:35,345 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:34:35,345 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:34:35,345 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:34:35,371 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925875337
+2026-02-01 11:34:35,371 - payops_ai.orchestrator - INFO - === Cycle 8 complete ===
+
+2026-02-01 11:34:35,372 - payops_ai.streaming.continuous_loop - INFO - 
+1 active intervention(s):
+  1. alert_ops on ops_team (270s remaining)
+2026-02-01 11:34:50,411 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:34:50,411 - payops_ai.streaming.continuous_loop - INFO - CYCLE 9 - Elapsed: 135.4s
+2026-02-01 11:34:50,411 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:34:50,412 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=78.07%, latency=186ms, retry=29.76%
+2026-02-01 11:34:50,412 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=96.37%, latency=82ms, retry=20.88%
+2026-02-01 11:34:50,412 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=91.99%, latency=210ms, retry=15.25%
+2026-02-01 11:34:50,412 - payops_ai.streaming.continuous_loop - INFO - SBI: success=86.07%, latency=375ms, retry=2.95%
+2026-02-01 11:34:50,412 - payops_ai.orchestrator - INFO - === Cycle 9 starting ===
+2026-02-01 11:34:50,412 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:34:50,414 - payops_ai.orchestrator - INFO - Observed 1522 transactions, success rate: 90.14%
+2026-02-01 11:34:50,414 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:34:50,416 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:34:50,417 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:34:50,417 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:34:50,417 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:34:50,417 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:34:50,417 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:34:50,417 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:34:50,418 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:34:50,418 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:34:50,418 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:34:50,418 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:34:50,418 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:34:50,418 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:34:50,419 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:34:50,419 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:34:50,441 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925890412
+2026-02-01 11:34:50,442 - payops_ai.orchestrator - INFO - === Cycle 9 complete ===
+
+2026-02-01 11:34:50,442 - payops_ai.streaming.continuous_loop - INFO - 
+1 active intervention(s):
+  1. alert_ops on ops_team (255s remaining)
+2026-02-01 11:35:05,464 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:35:05,464 - payops_ai.streaming.continuous_loop - INFO - CYCLE 10 - Elapsed: 150.5s
+2026-02-01 11:35:05,464 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:35:05,464 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=58.19%, latency=351ms, retry=8.99%
+2026-02-01 11:35:05,465 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=75.10%, latency=103ms, retry=0.00%
+2026-02-01 11:35:05,465 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=92.85%, latency=164ms, retry=0.09%
+2026-02-01 11:35:05,465 - payops_ai.streaming.continuous_loop - INFO - SBI: success=78.86%, latency=278ms, retry=0.00%
+2026-02-01 11:35:05,465 - payops_ai.orchestrator - INFO - === Cycle 10 starting ===
+2026-02-01 11:35:05,465 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:35:05,467 - payops_ai.orchestrator - INFO - Observed 1536 transactions, success rate: 91.41%
+2026-02-01 11:35:05,467 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:35:05,469 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:35:05,470 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:35:05,470 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:35:05,470 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:35:05,470 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:35:05,470 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:35:05,471 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:35:05,471 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:35:05,472 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:35:05,472 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:35:05,472 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:35:05,472 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:35:05,472 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:35:05,473 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:35:05,473 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:35:05,495 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925905465
+2026-02-01 11:35:05,495 - payops_ai.orchestrator - INFO - === Cycle 10 complete ===
+
+2026-02-01 11:35:05,495 - payops_ai.streaming.continuous_loop - INFO - 
+1 active intervention(s):
+  1. alert_ops on ops_team (240s remaining)
+2026-02-01 11:35:20,515 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:35:20,515 - payops_ai.streaming.continuous_loop - INFO - CYCLE 11 - Elapsed: 165.5s
+2026-02-01 11:35:20,515 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:35:20,515 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=75.96%, latency=243ms, retry=0.00%
+2026-02-01 11:35:20,515 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=99.34%, latency=86ms, retry=13.10%
+2026-02-01 11:35:20,515 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=163ms, retry=7.13%
+2026-02-01 11:35:20,516 - payops_ai.streaming.continuous_loop - INFO - SBI: success=66.43%, latency=117ms, retry=0.00%
+2026-02-01 11:35:20,516 - payops_ai.orchestrator - INFO - === Cycle 11 starting ===
+2026-02-01 11:35:20,516 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:35:20,518 - payops_ai.orchestrator - INFO - Observed 1528 transactions, success rate: 90.18%
+2026-02-01 11:35:20,519 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:35:20,521 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:35:20,522 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:35:20,522 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:35:20,522 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:35:20,522 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:35:20,522 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:35:20,522 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:35:20,523 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:35:20,540 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925920516
+2026-02-01 11:35:20,541 - payops_ai.orchestrator - INFO - === Cycle 11 complete ===
+
+2026-02-01 11:35:20,541 - payops_ai.streaming.continuous_loop - INFO - 
+1 active intervention(s):
+  1. alert_ops on ops_team (225s remaining)
+2026-02-01 11:35:35,137 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:35:35,138 - payops_ai.streaming.continuous_loop - INFO - STATUS UPDATE - Elapsed: 180.2s
+2026-02-01 11:35:35,138 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:35:35,138 - payops_ai.streaming.continuous_loop - INFO - Cycles completed: 11
+2026-02-01 11:35:35,138 - payops_ai.streaming.continuous_loop - INFO - Total transactions: 248581
+2026-02-01 11:35:35,138 - payops_ai.streaming.continuous_loop - INFO - Buffer size: 1000
+2026-02-01 11:35:35,138 - payops_ai.streaming.continuous_loop - INFO - Active interventions: 1
+2026-02-01 11:35:35,139 - payops_ai.streaming.continuous_loop - INFO - 
+Issuer States:
+2026-02-01 11:35:35,139 - payops_ai.streaming.continuous_loop - INFO -   HDFC: success=84.61%, latency=177ms, retry=17.10%
+2026-02-01 11:35:35,139 - payops_ai.streaming.continuous_loop - INFO -   ICICI: success=100.00%, latency=305ms, retry=4.66%
+2026-02-01 11:35:35,140 - payops_ai.streaming.continuous_loop - INFO -   AXIS: success=99.64%, latency=222ms, retry=0.00%
+2026-02-01 11:35:35,140 - payops_ai.streaming.continuous_loop - INFO -   SBI: success=94.85%, latency=209ms, retry=0.00%
+2026-02-01 11:35:35,140 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+
+2026-02-01 11:35:35,572 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:35:35,572 - payops_ai.streaming.continuous_loop - INFO - CYCLE 12 - Elapsed: 180.6s
+2026-02-01 11:35:35,572 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:35:35,572 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=80.64%, latency=157ms, retry=0.00%
+2026-02-01 11:35:35,573 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=98.86%, latency=50ms, retry=23.30%
+2026-02-01 11:35:35,573 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=119ms, retry=0.00%
+2026-02-01 11:35:35,573 - payops_ai.streaming.continuous_loop - INFO - SBI: success=86.24%, latency=113ms, retry=20.27%
+2026-02-01 11:35:35,573 - payops_ai.orchestrator - INFO - === Cycle 12 starting ===
+2026-02-01 11:35:35,573 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:35:35,575 - payops_ai.orchestrator - INFO - Observed 1538 transactions, success rate: 92.33%
+2026-02-01 11:35:35,576 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:35:35,578 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:35:35,578 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:35:35,578 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:35:35,578 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:35:35,579 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:35:35,579 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:35:35,579 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:35:35,579 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 11:35:35,579 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 11:35:35,579 - payops_ai.orchestrator - INFO - Decision: ACT
+2026-02-01 11:35:35,580 - payops_ai.orchestrator - INFO - Selected: alert_ops on ops_team
+2026-02-01 11:35:35,580 - payops_ai.decision.nrv_calculator - INFO - NRV Calculation: alert_ops on ops_team = $-5.00 (recovery=$0.00, cost=$5.00, latency_penalty=$0.00)
+2026-02-01 11:35:35,580 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:35:35,580 - payops_ai.action.pre_mortem - INFO - Pre-Mortem Analysis: alert_ops - Risk Score: 0.00, Acceptable: True, Scenarios: 3
+2026-02-01 11:35:35,580 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 11:35:35,580 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 11:35:35,581 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 11:35:35,581 - payops_ai.action.executor - INFO - Pre-Mortem: Risk Score=0.00, Acceptable=True
+2026-02-01 11:35:35,581 - payops_ai.action.executor - INFO - [SIMULATION] Would execute alert_ops on ops_team
+2026-02-01 11:35:35,581 - payops_ai.orchestrator - INFO - Executed intervention d8a8d3cb-aa76-4bed-b7e5-bd1914509e38
+2026-02-01 11:35:35,581 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:35:35,581 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:35:35,581 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:35:35,582 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+Detected anomaly with significant deviation. Recommending alert_ops on ops_team (NRV=$-5.00).
+
+=== ACTION_JSON ===
+{
+  "should_act": true,
+  "action_type": "alert_ops",
+  "target": "ops_team",
+  "parameters": {
+    "severity": "low",
+    "reason": "minimum_action_frequency",
+    "message": "No anomalies detected but minimum action frequency rule triggered"
+  },
+  "confidence": 1.0,
+  "nrv": -5.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:35:35,582 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:35:35,599 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925935573
+2026-02-01 11:35:35,599 - payops_ai.orchestrator - INFO - === Cycle 12 complete ===
+
+2026-02-01 11:35:35,600 - payops_ai.streaming.feedback_controller - INFO - Applied intervention: alert_ops on ops_team for 300s
+2026-02-01 11:35:35,600 - payops_ai.streaming.continuous_loop - INFO - Applied intervention: alert_ops on ops_team
+2026-02-01 11:35:35,600 - payops_ai.streaming.continuous_loop - INFO - 
+2 active intervention(s):
+  1. alert_ops on ops_team (210s remaining)
+  2. alert_ops on ops_team (300s remaining)
+2026-02-01 11:35:50,596 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:35:50,596 - payops_ai.streaming.continuous_loop - INFO - CYCLE 13 - Elapsed: 195.6s
+2026-02-01 11:35:50,596 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:35:50,596 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=62.07%, latency=50ms, retry=0.00%
+2026-02-01 11:35:50,597 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=98.93%, latency=228ms, retry=28.51%
+2026-02-01 11:35:50,597 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=71.08%, latency=146ms, retry=2.47%
+2026-02-01 11:35:50,597 - payops_ai.streaming.continuous_loop - INFO - SBI: success=86.06%, latency=170ms, retry=4.11%
+2026-02-01 11:35:50,597 - payops_ai.orchestrator - INFO - === Cycle 13 starting ===
+2026-02-01 11:35:50,597 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:35:50,600 - payops_ai.orchestrator - INFO - Observed 1522 transactions, success rate: 92.05%
+2026-02-01 11:35:50,600 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:35:50,602 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:35:50,602 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:35:50,603 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:35:50,603 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:35:50,603 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:35:50,604 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:35:50,604 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:35:50,604 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:35:50,627 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925950597
+2026-02-01 11:35:50,627 - payops_ai.orchestrator - INFO - === Cycle 13 complete ===
+
+2026-02-01 11:35:50,627 - payops_ai.streaming.continuous_loop - INFO - 
+2 active intervention(s):
+  1. alert_ops on ops_team (195s remaining)
+  2. alert_ops on ops_team (285s remaining)
+2026-02-01 11:36:05,616 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:36:05,616 - payops_ai.streaming.continuous_loop - INFO - CYCLE 14 - Elapsed: 210.6s
+2026-02-01 11:36:05,616 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:36:05,616 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=96.47%, latency=172ms, retry=11.24%
+2026-02-01 11:36:05,616 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=165ms, retry=8.82%
+2026-02-01 11:36:05,616 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=123ms, retry=0.00%
+2026-02-01 11:36:05,617 - payops_ai.streaming.continuous_loop - INFO - SBI: success=78.33%, latency=216ms, retry=0.00%
+2026-02-01 11:36:05,617 - payops_ai.orchestrator - INFO - === Cycle 14 starting ===
+2026-02-01 11:36:05,617 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:36:05,620 - payops_ai.orchestrator - INFO - Observed 1523 transactions, success rate: 90.22%
+2026-02-01 11:36:05,620 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:36:05,622 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:36:05,622 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:36:05,623 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:36:05,623 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:36:05,623 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:36:05,623 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:36:05,624 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:36:05,624 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:36:05,624 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:36:05,624 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:36:05,624 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:36:05,625 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:36:05,625 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:36:05,625 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:36:05,625 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:36:05,647 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925965617
+2026-02-01 11:36:05,647 - payops_ai.orchestrator - INFO - === Cycle 14 complete ===
+
+2026-02-01 11:36:05,647 - payops_ai.streaming.continuous_loop - INFO - 
+2 active intervention(s):
+  1. alert_ops on ops_team (180s remaining)
+  2. alert_ops on ops_team (270s remaining)
+2026-02-01 11:36:20,673 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:36:20,673 - payops_ai.streaming.continuous_loop - INFO - CYCLE 15 - Elapsed: 225.7s
+2026-02-01 11:36:20,673 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:36:20,673 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=78.14%, latency=199ms, retry=50.00%
+2026-02-01 11:36:20,674 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=378ms, retry=4.64%
+2026-02-01 11:36:20,674 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=50ms, retry=32.40%
+2026-02-01 11:36:20,674 - payops_ai.streaming.continuous_loop - INFO - SBI: success=89.23%, latency=257ms, retry=0.00%
+2026-02-01 11:36:20,674 - payops_ai.orchestrator - INFO - === Cycle 15 starting ===
+2026-02-01 11:36:20,674 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:36:20,677 - payops_ai.orchestrator - INFO - Observed 1528 transactions, success rate: 89.40%
+2026-02-01 11:36:20,677 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:36:20,679 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:36:20,679 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:36:20,680 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:36:20,680 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:36:20,680 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:36:20,680 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:36:20,681 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:36:20,681 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:36:20,681 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:36:20,681 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:36:20,681 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:36:20,682 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:36:20,682 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:36:20,682 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:36:20,682 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:36:20,704 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925980674
+2026-02-01 11:36:20,704 - payops_ai.orchestrator - INFO - === Cycle 15 complete ===
+
+2026-02-01 11:36:20,705 - payops_ai.streaming.continuous_loop - INFO - 
+2 active intervention(s):
+  1. alert_ops on ops_team (165s remaining)
+  2. alert_ops on ops_team (255s remaining)
+2026-02-01 11:36:35,183 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:36:35,184 - payops_ai.streaming.continuous_loop - INFO - STATUS UPDATE - Elapsed: 240.2s
+2026-02-01 11:36:35,184 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:36:35,184 - payops_ai.streaming.continuous_loop - INFO - Cycles completed: 15
+2026-02-01 11:36:35,184 - payops_ai.streaming.continuous_loop - INFO - Total transactions: 334530
+2026-02-01 11:36:35,184 - payops_ai.streaming.continuous_loop - INFO - Buffer size: 1000
+2026-02-01 11:36:35,185 - payops_ai.streaming.continuous_loop - INFO - Active interventions: 2
+2026-02-01 11:36:35,185 - payops_ai.streaming.continuous_loop - INFO - 
+Issuer States:
+2026-02-01 11:36:35,185 - payops_ai.streaming.continuous_loop - INFO -   HDFC: success=84.21%, latency=50ms, retry=0.00%
+2026-02-01 11:36:35,185 - payops_ai.streaming.continuous_loop - INFO -   ICICI: success=100.00%, latency=269ms, retry=26.77%
+2026-02-01 11:36:35,185 - payops_ai.streaming.continuous_loop - INFO -   AXIS: success=100.00%, latency=144ms, retry=21.39%
+2026-02-01 11:36:35,185 - payops_ai.streaming.continuous_loop - INFO -   SBI: success=92.47%, latency=218ms, retry=0.00%
+2026-02-01 11:36:35,186 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+
+2026-02-01 11:36:35,722 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:36:35,722 - payops_ai.streaming.continuous_loop - INFO - CYCLE 16 - Elapsed: 240.7s
+2026-02-01 11:36:35,723 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:36:35,723 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=98.10%, latency=137ms, retry=11.99%
+2026-02-01 11:36:35,723 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=75.63%, latency=132ms, retry=0.00%
+2026-02-01 11:36:35,723 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=53.99%, latency=68ms, retry=10.89%
+2026-02-01 11:36:35,723 - payops_ai.streaming.continuous_loop - INFO - SBI: success=100.00%, latency=283ms, retry=0.00%
+2026-02-01 11:36:35,723 - payops_ai.orchestrator - INFO - === Cycle 16 starting ===
+2026-02-01 11:36:35,724 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:36:35,727 - payops_ai.orchestrator - INFO - Observed 1526 transactions, success rate: 88.93%
+2026-02-01 11:36:35,727 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:36:35,730 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:36:35,730 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:36:35,730 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:36:35,730 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:36:35,730 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:36:35,730 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:36:35,731 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:36:35,731 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:36:35,731 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:36:35,731 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:36:35,731 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:36:35,731 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:36:35,732 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:36:35,732 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:36:35,732 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:36:35,753 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769925995723
+2026-02-01 11:36:35,753 - payops_ai.orchestrator - INFO - === Cycle 16 complete ===
+
+2026-02-01 11:36:35,754 - payops_ai.streaming.continuous_loop - INFO - 
+2 active intervention(s):
+  1. alert_ops on ops_team (150s remaining)
+  2. alert_ops on ops_team (240s remaining)
+2026-02-01 11:36:50,750 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:36:50,750 - payops_ai.streaming.continuous_loop - INFO - CYCLE 17 - Elapsed: 255.8s
+2026-02-01 11:36:50,751 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:36:50,751 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=87.54%, latency=230ms, retry=9.58%
+2026-02-01 11:36:50,751 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=96ms, retry=0.00%
+2026-02-01 11:36:50,751 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=100.00%, latency=187ms, retry=48.20%
+2026-02-01 11:36:50,751 - payops_ai.streaming.continuous_loop - INFO - SBI: success=95.91%, latency=234ms, retry=5.90%
+2026-02-01 11:36:50,751 - payops_ai.orchestrator - INFO - === Cycle 17 starting ===
+2026-02-01 11:36:50,752 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:36:50,754 - payops_ai.orchestrator - INFO - Observed 1526 transactions, success rate: 88.99%
+2026-02-01 11:36:50,754 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:36:50,756 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:36:50,756 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:36:50,757 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:36:50,757 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:36:50,757 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:36:50,757 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:36:50,758 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:36:50,758 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:36:50,758 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:36:50,758 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:36:50,758 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:36:50,758 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:36:50,759 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:36:50,759 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:36:50,759 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:36:50,783 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769926010751
+2026-02-01 11:36:50,784 - payops_ai.orchestrator - INFO - === Cycle 17 complete ===
+
+2026-02-01 11:36:50,784 - payops_ai.streaming.continuous_loop - INFO - 
+2 active intervention(s):
+  1. alert_ops on ops_team (135s remaining)
+  2. alert_ops on ops_team (225s remaining)
+2026-02-01 11:37:05,788 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:37:05,788 - payops_ai.streaming.continuous_loop - INFO - CYCLE 18 - Elapsed: 270.8s
+2026-02-01 11:37:05,789 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:37:05,789 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=95.05%, latency=162ms, retry=5.17%
+2026-02-01 11:37:05,789 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=60.64%, latency=329ms, retry=17.24%
+2026-02-01 11:37:05,789 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=88.33%, latency=103ms, retry=19.43%
+2026-02-01 11:37:05,789 - payops_ai.streaming.continuous_loop - INFO - SBI: success=100.00%, latency=180ms, retry=14.94%
+2026-02-01 11:37:05,789 - payops_ai.orchestrator - INFO - === Cycle 18 starting ===
+2026-02-01 11:37:05,789 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:37:05,792 - payops_ai.orchestrator - INFO - Observed 1526 transactions, success rate: 91.74%
+2026-02-01 11:37:05,792 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:37:05,794 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:37:05,795 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:37:05,795 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:37:05,795 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:37:05,795 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:37:05,795 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:37:05,795 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:37:05,796 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 11:37:05,796 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 11:37:05,796 - payops_ai.orchestrator - INFO - Decision: ACT
+2026-02-01 11:37:05,796 - payops_ai.orchestrator - INFO - Selected: alert_ops on ops_team
+2026-02-01 11:37:05,796 - payops_ai.decision.nrv_calculator - INFO - NRV Calculation: alert_ops on ops_team = $-5.00 (recovery=$0.00, cost=$5.00, latency_penalty=$0.00)
+2026-02-01 11:37:05,797 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:37:05,797 - payops_ai.action.pre_mortem - INFO - Pre-Mortem Analysis: alert_ops - Risk Score: 0.00, Acceptable: True, Scenarios: 3
+2026-02-01 11:37:05,797 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 11:37:05,797 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 11:37:05,797 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 11:37:05,797 - payops_ai.action.executor - INFO - Pre-Mortem: Risk Score=0.00, Acceptable=True
+2026-02-01 11:37:05,797 - payops_ai.action.executor - INFO - [SIMULATION] Would execute alert_ops on ops_team
+2026-02-01 11:37:05,797 - payops_ai.orchestrator - INFO - Executed intervention 32f27657-8932-47a0-a8f8-b352ce2199ba
+2026-02-01 11:37:05,798 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:37:05,798 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:37:05,798 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:37:05,798 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+Detected anomaly with significant deviation. Recommending alert_ops on ops_team (NRV=$-5.00).
+
+=== ACTION_JSON ===
+{
+  "should_act": true,
+  "action_type": "alert_ops",
+  "target": "ops_team",
+  "parameters": {
+    "severity": "low",
+    "reason": "minimum_action_frequency",
+    "message": "No anomalies detected but minimum action frequency rule triggered"
+  },
+  "confidence": 1.0,
+  "nrv": -5.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:37:05,798 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:37:05,820 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769926025789
+2026-02-01 11:37:05,820 - payops_ai.orchestrator - INFO - === Cycle 18 complete ===
+
+2026-02-01 11:37:05,820 - payops_ai.streaming.feedback_controller - INFO - Applied intervention: alert_ops on ops_team for 300s
+2026-02-01 11:37:05,821 - payops_ai.streaming.continuous_loop - INFO - Applied intervention: alert_ops on ops_team
+2026-02-01 11:37:05,821 - payops_ai.streaming.continuous_loop - INFO - 
+3 active intervention(s):
+  1. alert_ops on ops_team (120s remaining)
+  2. alert_ops on ops_team (210s remaining)
+  3. alert_ops on ops_team (300s remaining)
+2026-02-01 11:37:20,854 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:37:20,855 - payops_ai.streaming.continuous_loop - INFO - CYCLE 19 - Elapsed: 285.9s
+2026-02-01 11:37:20,855 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:37:20,855 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=100.00%, latency=136ms, retry=0.03%
+2026-02-01 11:37:20,855 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=376ms, retry=0.00%
+2026-02-01 11:37:20,856 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=79.99%, latency=246ms, retry=11.14%
+2026-02-01 11:37:20,856 - payops_ai.streaming.continuous_loop - INFO - SBI: success=79.45%, latency=169ms, retry=22.83%
+2026-02-01 11:37:20,856 - payops_ai.orchestrator - INFO - === Cycle 19 starting ===
+2026-02-01 11:37:20,856 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:37:20,858 - payops_ai.orchestrator - INFO - Observed 1527 transactions, success rate: 91.55%
+2026-02-01 11:37:20,858 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:37:20,861 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:37:20,861 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:37:20,861 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:37:20,861 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:37:20,861 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:37:20,862 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:37:20,862 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:37:20,862 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:37:20,862 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:37:20,862 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:37:20,862 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:37:20,863 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:37:20,863 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:37:20,863 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:37:20,863 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:37:20,884 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769926040856
+2026-02-01 11:37:20,885 - payops_ai.orchestrator - INFO - === Cycle 19 complete ===
+
+2026-02-01 11:37:20,885 - payops_ai.streaming.continuous_loop - INFO - 
+3 active intervention(s):
+  1. alert_ops on ops_team (104s remaining)
+  2. alert_ops on ops_team (195s remaining)
+  3. alert_ops on ops_team (285s remaining)
+2026-02-01 11:37:35,235 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - STATUS UPDATE - Elapsed: 300.3s
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - Cycles completed: 19
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - Total transactions: 420057
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - Buffer size: 1000
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - Active interventions: 3
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO - 
+Issuer States:
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO -   HDFC: success=81.42%, latency=193ms, retry=0.00%
+2026-02-01 11:37:35,236 - payops_ai.streaming.continuous_loop - INFO -   ICICI: success=81.44%, latency=92ms, retry=0.00%
+2026-02-01 11:37:35,237 - payops_ai.streaming.continuous_loop - INFO -   AXIS: success=100.00%, latency=198ms, retry=9.74%
+2026-02-01 11:37:35,237 - payops_ai.streaming.continuous_loop - INFO -   SBI: success=84.40%, latency=221ms, retry=7.39%
+2026-02-01 11:37:35,237 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+
+2026-02-01 11:37:35,879 - payops_ai.streaming.continuous_loop - INFO - 
+================================================================================
+2026-02-01 11:37:35,879 - payops_ai.streaming.continuous_loop - INFO - CYCLE 20 - Elapsed: 300.9s
+2026-02-01 11:37:35,880 - payops_ai.streaming.continuous_loop - INFO - ================================================================================
+2026-02-01 11:37:35,880 - payops_ai.streaming.continuous_loop - INFO - HDFC: success=100.00%, latency=91ms, retry=6.70%
+2026-02-01 11:37:35,880 - payops_ai.streaming.continuous_loop - INFO - ICICI: success=100.00%, latency=311ms, retry=0.00%
+2026-02-01 11:37:35,880 - payops_ai.streaming.continuous_loop - INFO - AXIS: success=84.00%, latency=292ms, retry=9.21%
+2026-02-01 11:37:35,880 - payops_ai.streaming.continuous_loop - INFO - SBI: success=94.61%, latency=72ms, retry=3.82%
+2026-02-01 11:37:35,880 - payops_ai.orchestrator - INFO - === Cycle 20 starting ===
+2026-02-01 11:37:35,880 - payops_ai.orchestrator - INFO - Phase 1: OBSERVE
+2026-02-01 11:37:35,882 - payops_ai.orchestrator - INFO - Observed 1522 transactions, success rate: 91.20%
+2026-02-01 11:37:35,883 - payops_ai.orchestrator - INFO - Phase 2: REASON (with Multi-Factor Confidence and EWMA Baselines)
+2026-02-01 11:37:35,885 - payops_ai.orchestrator - INFO - Detected 0 pattern(s), max Z-score: 0.00
+2026-02-01 11:37:35,885 - payops_ai.orchestrator - INFO - Generated 0 hypothesis/hypotheses
+2026-02-01 11:37:35,885 - payops_ai.orchestrator - INFO - System health: 1.00, uncertainty: 0.00
+2026-02-01 11:37:35,886 - payops_ai.orchestrator - INFO - Phase 3: DECIDE (with NRV Optimization)
+2026-02-01 11:37:35,886 - payops_ai.orchestrator - INFO - Generated 1 intervention option(s)
+2026-02-01 11:37:35,886 - payops_ai.safety.constraints - INFO - Ranked 1 options by minimal intervention preference
+2026-02-01 11:37:35,886 - payops_ai.safety.constraints - INFO - Safety constraints: 1 options -> 1 allowed
+2026-02-01 11:37:35,886 - payops_ai.orchestrator - INFO - Decision: NO ACTION
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - Phase 4: ACT (with Pre-Mortem Safety Check)
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - No action executed
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - Phase 5: LEARN
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - Outcome evaluation deferred until next cycle
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - 
+============================================================
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - === EXECUTIVE SUMMARY ===
+System operating normally with no significant anomalies. No intervention required at this time.
+
+=== ACTION_JSON ===
+{
+  "should_act": false,
+  "action_type": "no_action",
+  "target": null,
+  "parameters": {},
+  "confidence": 1.0,
+  "nrv": 0.0,
+  "z_score": 0.0,
+  "blast_radius": 0.0,
+  "requires_approval": false,
+  "risk_score": 0.0,
+  "risk_acknowledged": false
+}
+2026-02-01 11:37:35,887 - payops_ai.orchestrator - INFO - ============================================================
+
+2026-02-01 11:37:35,911 - payops_ai.memory.state_manager - INFO - State saved successfully at 1769926055880
+2026-02-01 11:37:35,911 - payops_ai.orchestrator - INFO - === Cycle 20 complete ===
+
+2026-02-01 11:37:35,911 - payops_ai.streaming.continuous_loop - INFO - 
+3 active intervention(s):
+  1. alert_ops on ops_team (89s remaining)
+  2. alert_ops on ops_team (180s remaining)
+  3. alert_ops on ops_team (270s remaining)
