@@ -59,14 +59,15 @@ class ConfidenceScorer:
         if not transactions:
             return 0.0
         
-        # Filter failed transactions
-        failed = [t for t in transactions if t.get('outcome') in ['soft_fail', 'hard_fail']]
+        # Filter failed transactions - support both dict and object access
+        failed = [t for t in transactions if (t.get('outcome') if isinstance(t, dict) else getattr(t, 'outcome', None)) in ['soft_fail', 'hard_fail']]
         
         if not failed:
             return 0.0
         
         # Count occurrences of dimension values
-        values = [t.get(dimension) for t in failed if t.get(dimension)]
+        values = [(t.get(dimension) if isinstance(t, dict) else getattr(t, dimension, None)) for t in failed]
+        values = [v for v in values if v is not None]
         
         if not values:
             return 0.0

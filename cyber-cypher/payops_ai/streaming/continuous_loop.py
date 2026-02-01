@@ -7,6 +7,7 @@ from typing import Optional
 from dataclasses import dataclass
 import json
 import random
+import traceback
 
 from payops_ai.orchestrator import AgentOrchestrator
 from payops_ai.streaming.continuous_generator import ContinuousPaymentGenerator
@@ -65,6 +66,9 @@ class ContinuousAgentLoop:
         self.success_series: list[float] = []
         self.latency_series: list[float] = []
         self.intervention_history = []
+        self.active_nrv = 0.0
+        self.total_nrv = 0.0
+        self.last_thinking = 'Operational - Monitoring stream...'
 
         # WebSocket broadcaster
         self.ws_broadcaster = get_broadcaster()
@@ -164,10 +168,35 @@ class ContinuousAgentLoop:
                         logger.info("!! FORCING SYNTHETIC INTERVENTION !!")
                         from payops_ai.models.intervention import InterventionOption, InterventionType, OutcomeEstimate, Tradeoffs
                         
+                        # Diversify interventions as requested by user
+                        available_types = [
+                            InterventionType.REROUTE_TRAFFIC,
+                            InterventionType.ADJUST_RETRY,
+                            InterventionType.SUPPRESS_PATH,
+                            InterventionType.REDUCE_RETRY_ATTEMPTS,
+                            InterventionType.ALERT_OPS
+                        ]
+                        chosen_type = random.choice(available_types)
+                        
+                        # Diversify targets
+                        issuers = list(self.drift_engine.get_all_issuers().keys())
+                        target_issuer = random.choice(issuers) if issuers else "HDFC"
+                        
+                        # Diversify rationale and NRV
+                        mock_nrv = random.randint(3000, 12000)
+                        reasons = [
+                            f"Anomalous drop in {target_issuer} success rate.",
+                            f"Latency spike detected on {target_issuer} path.",
+                            f"Predictive model suggests imminent failure for {target_issuer}.",
+                            f"Cost-benefit analysis favors {chosen_type.value} on {target_issuer}.",
+                            f"Cluster of provider errors detected for {target_issuer}."
+                        ]
+                        chosen_reason = f"{random.choice(reasons)} NRV=${mock_nrv:,}"
+                        
                         synthetic_option = InterventionOption(
-                            type=InterventionType.REROUTE_TRAFFIC,
-                            target=f"issuer:{list(self.drift_engine.get_all_issuers().keys())[0]}",
-                            parameters={"duration_ms": 60000},
+                            type=chosen_type,
+                            target=f"issuer:{target_issuer}",
+                            parameters={"duration_ms": 60000, "reason": "synthetic_demo", "diversified": True},
                             expected_outcome=OutcomeEstimate(
                                 expected_success_rate_change=0.9,
                                 expected_latency_change=-100.0,
@@ -188,7 +217,10 @@ class ContinuousAgentLoop:
                         # Patch decision for logging/telemetry
                         decision.should_act = True
                         decision.selected_option = synthetic_option
-                        decision.rationale = "Synthetic intervention triggered for demo cycle 5. NRV=$5,000"
+                        decision.rationale = chosen_reason
+                        
+                        # Update total NRV
+                        self.total_nrv += mock_nrv
                         
                         # Add to history
                         self.intervention_history.append({
@@ -197,22 +229,31 @@ class ContinuousAgentLoop:
                             'target': synthetic_option.target,
                             'reason': decision.rationale,
                             'result': 'Triggered',
-                            'rate': '+5.0%' # Mock impact
+                            'rate': f"+{random.uniform(2, 7):.1f}%"
                         })
                     
                     # Apply intervention if decided
                     if decision.should_act and decision.selected_option:
                         self.feedback.apply_intervention(decision.selected_option)
                         
-                        # Add to history if not already added (for forced ones)
+                        # Add to history if not already added (for natural ones)
                         if not any(i['ts'] == time.strftime('%H:%M:%S', time.localtime()) and i['action'] == decision.selected_option.type for i in self.intervention_history):
+                            mock_nrv = random.randint(2000, 8000)
+                            mock_rate = random.uniform(2.0, 6.0)
+                            
+                            # Update rationale for natural interventions if missing NRV
+                            if decision.rationale and 'NRV=$' not in decision.rationale:
+                                decision.rationale = f"{decision.rationale} NRV=${mock_nrv:,}"
+                            
+                            self.total_nrv += mock_nrv
+
                             self.intervention_history.append({
                                 'ts': time.strftime('%H:%M:%S', time.localtime()),
                                 'action': decision.selected_option.type,
                                 'target': decision.selected_option.target,
                                 'reason': decision.rationale or "Automatic intervention",
                                 'result': 'Active',
-                                'rate': f"+{random.uniform(1, 5):.1f}%"
+                                'rate': f"+{mock_rate:.1f}%"
                             })
                         logger.info(f"Applied intervention: {decision.selected_option.type.value} "
                                    f"on {decision.selected_option.target}")
@@ -221,21 +262,9 @@ class ContinuousAgentLoop:
                     if self.feedback.get_active_count() > 0:
                         logger.info(f"\n{self.feedback.get_status_summary(current_time)}")
                     
-                    # Update rolling series during the cycle
-                    issuers = list(self.drift_engine.get_all_issuers().values())
-                    cycle_success = (sum(s.success_rate for s in issuers)/len(issuers)) * 100.0 if issuers else 100.0
-                    cycle_latency = (sum(s.latency_ms for s in issuers)/len(issuers)) if issuers else 0.0
-                    
-                    self.success_series.append(cycle_success)
-                    self.latency_series.append(cycle_latency)
-                    if len(self.success_series) > 40:
-                        self.success_series = self.success_series[-40:]
-                    if len(self.latency_series) > 40:
-                        self.latency_series = self.latency_series[-40:]
-
                     last_cycle_time = current_time
 
-                # Prepare and broadcast a lightweight telemetry snapshot every 1 second
+                        # Prepare and broadcast a lightweight telemetry snapshot every 1 second
                 if current_time - last_telemetry_time >= 1.0:
                     try:
                         from payops_ai.models.transaction import Outcome
@@ -250,25 +279,36 @@ class ContinuousAgentLoop:
                             avg_success = (sum(s.success_rate for s in issuers)/len(issuers)) * 100.0 if issuers else 100.0
                             avg_latency = (sum(s.latency_ms for s in issuers)/len(issuers)) if issuers else 0.0
 
-                        # Extract simple summary from explanation if present
-                        thinking = []
-                        try:
-                            if explanation and hasattr(explanation, 'executive_summary') and explanation.executive_summary:
-                                thinking.append(explanation.executive_summary)
-                            else:
-                                thinking.append('Operational - Monitoring stream...')
-                        except Exception:
-                            thinking = ['Operational - Monitoring stream...']
+                        # Update rolling series every 1 second for live graphs
+                        self.success_series.append(avg_success)
+                        self.latency_series.append(avg_latency)
+                        if len(self.success_series) > 60:
+                            self.success_series = self.success_series[-60:]
+                        if len(self.latency_series) > 60:
+                            self.latency_series = self.latency_series[-60:]
 
-                        # Parse NRV from decision rationale if present
-                        nrv_val = None
+                        # Update active NRV from current decision if it exists
+                        current_nrv = 0.0
                         try:
-                            if decision and getattr(decision, 'rationale', None):
-                                if 'NRV=$' in decision.rationale:
-                                    nrv_str = decision.rationale.split('NRV=$')[1].split()[0]
-                                    nrv_val = float(nrv_str.replace(',',''))
+                            if decision and getattr(decision, 'rationale', None) and 'NRV=$' in decision.rationale:
+                                nrv_str = decision.rationale.split('NRV=$')[1].split()[0]
+                                current_nrv = float(nrv_str.replace(',',''))
                         except Exception:
-                            nrv_val = None
+                            pass
+                        
+                        # Persist NRV if we have active interventions, otherwise use current
+                        if self.feedback.get_active_count() > 0:
+                            if current_nrv > 0:
+                                self.active_nrv = current_nrv
+                        else:
+                            self.active_nrv = current_nrv
+
+                        # Extract simple summary from explanation if present
+                        if explanation and hasattr(explanation, 'executive_summary') and explanation.executive_summary:
+                            self.last_thinking = explanation.executive_summary
+                        elif not decision or not decision.should_act:
+                            if self.feedback.get_active_count() == 0:
+                                self.last_thinking = 'Operational - Monitoring stream...'
 
                         # Generate lightweight safety metrics (simulated for demo)
                         fpr = max(0.0, round(0.8 + random.uniform(-0.1, 0.1), 2))
@@ -283,8 +323,8 @@ class ContinuousAgentLoop:
                             'active_gateway': 'Gateway-Alpha',
                             'success_series': self.success_series,
                             'latency_series': self.latency_series,
-                            'thinking_log': thinking,
-                            'nrv': nrv_val or 0,
+                            'thinking_log': [self.last_thinking],
+                            'nrv': self.total_nrv,
                             'confidence': round(getattr(explanation, 'confidence', 0.0) * 100.0, 1) if explanation else 0.0,
                             'safety_metrics': {
                                 'false_positive_rate': fpr,
@@ -298,8 +338,9 @@ class ContinuousAgentLoop:
                         # Broadcast
                         self.ws_broadcaster.broadcast_sync(json.dumps(status))
                         last_telemetry_time = current_time
+                        logger.info(f"Broadcasted telemetry snapshot (volume={status['total_volume']})")
                     except Exception as e:
-                        logger.debug(f"Telemetry broadcast failed: {e}")
+                        logger.warning(f"Telemetry broadcast failed: {e}")
 
                     # Check for checkpoint
                     if self.config.checkpoint_cycles and self.cycle_count >= self.config.checkpoint_cycles:
@@ -324,7 +365,8 @@ class ContinuousAgentLoop:
                 logger.info("Keyboard interrupt received")
                 break
             except Exception as e:
-                logger.error(f"Error in loop iteration: {e}", exc_info=True)
+                logger.error(f"CRITICAL ERROR IN LOOP ITERATION: {e}")
+                logger.error(traceback.format_exc())
                 # Continue running despite errors
             
             # Sleep to control loop rate

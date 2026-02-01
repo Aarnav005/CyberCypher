@@ -112,6 +112,11 @@ class FeedbackController:
                     # Reroute traffic: reduce volume by 70%
                     self.generator.set_volume_multiplier(issuer, 0.3)
                     logger.debug(f"Rerouting traffic from {issuer}")
+            
+            elif intervention.type == InterventionType.ADJUST_RETRY:
+                # Increase retry probability to improve recovery chance
+                self.generator.set_retry_multiplier(1.5)
+                logger.debug("Adjusting retry parameters: increasing retry probability")
     
     def update(self, current_time: float) -> None:
         """Update active interventions and remove expired ones.

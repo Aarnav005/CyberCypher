@@ -1,0 +1,192 @@
+{
+  "current_beliefs": {
+    "active_hypotheses": [],
+    "system_health_score": 1.0,
+    "uncertainty_level": 0.0,
+    "last_updated": 1769929262878
+  },
+  "active_interventions": [
+    {
+      "success": true,
+      "intervention_id": "a01078a0-a345-41c1-bb73-662684469ee5",
+      "executed_at": 1769929262941,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    }
+  ],
+  "recent_observations": {
+    "transactions": [
+      {
+        "transaction_id": "txn_1769929250316_25817",
+        "timestamp": 1769929251582,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 223,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_16",
+        "amount": 855.9821510936223,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25818",
+        "timestamp": 1769929251633,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 239,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_3",
+        "amount": 593.0904069575714,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25819",
+        "timestamp": 1769929251684,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 223,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_3",
+        "amount": 284.16562823660496,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25820",
+        "timestamp": 1769929251734,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 165,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_17",
+        "amount": 562.3975162164678,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25821",
+        "timestamp": 1769929251785,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 216,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_4",
+        "amount": 218.08363492661806,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25822",
+        "timestamp": 1769929251836,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 147,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_14",
+        "amount": 48.394824949552294,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25823",
+        "timestamp": 1769929251886,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 213,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_2",
+        "amount": 222.01733632891614,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25824",
+        "timestamp": 1769929251937,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 195,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_16",
+        "amount": 766.5541110831671,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25825",
+        "timestamp": 1769929251988,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 215,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_9",
+        "amount": 880.7593195033439,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769929250316_25826",
+        "timestamp": 1769929252039,
+        "outcome": "soft_fail",
+        "error_code": "ERR_7915",
+        "latency_ms": 180,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_9",
+        "amount": 890.9177072034344,
+        "geography": "US"
+      }
+    ],
+    "time_range_ms": [
+      1769929251582,
+      1769929262878
+    ],
+    "aggregate_stats": {
+      "total_transactions": 7360,
+      "success_count": 6708,
+      "soft_fail_count": 466,
+      "hard_fail_count": 186,
+      "success_rate": 0.9114130434782609,
+      "avg_latency_ms": 202.20991847826087,
+      "p95_latency_ms": 301.0,
+      "p99_latency_ms": 600.0,
+      "avg_retry_count": 0.11997282608695652,
+      "unique_issuers": 4,
+      "unique_methods": 1
+    }
+  },
+  "model_parameters": {
+    "anomaly_threshold": 2.0,
+    "min_confidence_for_action": 0.7,
+    "max_blast_radius_for_autonomy": 0.3,
+    "learning_rate": 0.1,
+    "conservativeness_level": 0.5
+  },
+  "last_updated": 1769929262878,
+  "nrv_projection": -5.0,
+  "z_score": 0.0,
+  "risk_acknowledged": true
+}

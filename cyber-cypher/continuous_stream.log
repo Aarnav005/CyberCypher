@@ -10987,3 +10987,486 @@ AttributeError: 'ContinuousAgentLoop' object has no attribute 'intervention_hist
 2026-02-01 11:54:22,403 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
 2026-02-01 11:54:22,403 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
 2026-02-01 11:54:22,403 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:12:34,564 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:12:34,564 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:12:34,565 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:12:34,566 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:12:34,566 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:13:22,783 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:13:22,783 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:13:22,784 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:13:22,784 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:13:22,784 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:15:09,286 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,387 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,488 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,589 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,690 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,792 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,893 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:09,994 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,095 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,197 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,298 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,400 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,502 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,604 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,705 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,807 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:10,909 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,011 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,113 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,216 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,318 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,419 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,523 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,625 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,730 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,842 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:11,956 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,067 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,179 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,296 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,403 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,514 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,625 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,744 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,861 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:12,978 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,092 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,211 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,335 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,455 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,569 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,682 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,800 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:13,919 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,040 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,162 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,274 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,392 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,507 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,629 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,742 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,851 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:14,961 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,070 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,182 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,296 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,407 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,533 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,659 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,788 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:15,916 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,027 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,143 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,267 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,395 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,508 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,620 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,737 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,850 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:16,983 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,107 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,222 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,350 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,452 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,557 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,660 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,763 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,866 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:17,972 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,078 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,185 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,292 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,394 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,497 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,599 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,702 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,804 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:18,907 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,009 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,112 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,214 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,319 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,421 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,525 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,627 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,730 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,832 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:19,935 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,038 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,141 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,244 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,348 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,451 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,554 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,657 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,761 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,864 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:20,968 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,071 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,175 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,279 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,383 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,486 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,590 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,694 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,797 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:21,902 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,010 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,114 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,219 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,324 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,437 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,541 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,646 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,750 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,854 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:22,958 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,062 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,166 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,272 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,376 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,481 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,585 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,690 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,794 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:23,900 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,005 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,110 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,215 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,322 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,434 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,540 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,648 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,753 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,859 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:24,966 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,072 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,178 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,288 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,448 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,550 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,652 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,754 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,857 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:25,959 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,061 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,164 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,266 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,369 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,472 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,574 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,677 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,780 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,883 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:26,987 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,091 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,195 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,297 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,400 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,504 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,607 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,709 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,813 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:27,916 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,019 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,123 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,226 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,330 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,433 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,536 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,639 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,743 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,847 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:28,950 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,054 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,157 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,261 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,365 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,470 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,574 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,678 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,782 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,885 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:29,995 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,116 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,242 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,367 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,491 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,602 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,714 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,824 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:30,950 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,056 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,160 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,265 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,370 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,475 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,581 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,686 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,791 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:31,897 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,002 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,107 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,212 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,318 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,424 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,530 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,636 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,741 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,853 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:32,960 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,066 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,171 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,279 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,384 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,537 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,639 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,741 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,843 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:33,946 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,048 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,150 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,253 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,355 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,458 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,560 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,663 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,766 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,868 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:34,971 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,074 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,177 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,281 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,384 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,487 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,590 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,693 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,796 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:35,899 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,003 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,106 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,211 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,314 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,417 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,520 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,624 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,727 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,831 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:36,934 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,038 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,142 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,246 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,350 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,454 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,557 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,662 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,766 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,870 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:37,974 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,079 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,183 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,288 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,392 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,496 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,600 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,704 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,808 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:38,913 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,018 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,123 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,228 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,333 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,439 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,544 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,649 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,754 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,858 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:39,964 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,069 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,175 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,280 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,385 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,491 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,596 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,701 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,806 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:40,912 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,017 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,123 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,229 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,335 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,440 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,583 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,685 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,788 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,890 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:41,992 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,094 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,197 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,299 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,402 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,504 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,607 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,709 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,812 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:42,914 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,017 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,120 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,223 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,330 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,435 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,548 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,664 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,778 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,884 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:43,990 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,094 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,198 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,303 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,407 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,510 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,614 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,718 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,822 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:44,926 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,029 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,132 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,236 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,341 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,445 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,549 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,653 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,758 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,862 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:45,966 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,070 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,174 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,279 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,383 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,487 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,592 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,696 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,801 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:46,907 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,012 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,116 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,221 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,326 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,430 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,536 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,640 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,745 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,850 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:47,955 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,061 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,166 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,271 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,377 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,482 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,587 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,700 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,805 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:48,911 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:49,016 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:49,122 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:49,228 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:49,334 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:49,439 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:15:49,546 - payops_ai.streaming.continuous_loop - WARNING - Telemetry broadcast failed: cannot access local variable 'random' where it is not associated with a value
+2026-02-01 12:18:12,381 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:18:12,381 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:18:12,382 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:18:12,382 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:18:12,382 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:18:20,497 - payops_ai.streaming.continuous_loop - ERROR - CRITICAL ERROR IN LOOP ITERATION: 'TransactionSignal' object has no attribute 'get'
+2026-02-01 12:18:20,511 - payops_ai.streaming.continuous_loop - ERROR - Traceback (most recent call last):
+  File "C:\Users\Aarnav\Cyb\cyber-cypher\cyber-cypher\payops_ai\streaming\continuous_loop.py", line 161, in run
+    decision, explanation = self.orchestrator.execute_cycle()
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Aarnav\Cyb\cyber-cypher\cyber-cypher\payops_ai\orchestrator.py", line 179, in execute_cycle
+    patterns = self.anomaly_detector.detect_anomalies_with_rolling_baseline(
+        dim_stats, rolling_baseline, dimension, timestamp, txns
+    )
+  File "C:\Users\Aarnav\Cyb\cyber-cypher\cyber-cypher\payops_ai\reasoning\anomaly.py", line 346, in detect_anomalies_with_rolling_baseline
+    success_rate_pattern = self.detect_success_rate_anomaly_with_rolling_baseline(
+        current_stats, rolling_baseline, dimension, timestamp, transactions
+    )
+  File "C:\Users\Aarnav\Cyb\cyber-cypher\cyber-cypher\payops_ai\reasoning\anomaly.py", line 66, in detect_success_rate_anomaly_with_rolling_baseline
+    confidence_details = self.confidence_scorer.calculate_confidence(
+        failed_transactions=failed_count,
+    ...<4 lines>...
+        dimension="error_code"
+    )
+  File "C:\Users\Aarnav\Cyb\cyber-cypher\cyber-cypher\payops_ai\reasoning\confidence_scorer.py", line 164, in calculate_confidence
+    consistency_score = self.calculate_signal_consistency_score(transactions, dimension)
+  File "C:\Users\Aarnav\Cyb\cyber-cypher\cyber-cypher\payops_ai\reasoning\confidence_scorer.py", line 63, in calculate_signal_consistency_score
+    failed = [t for t in transactions if t.get('outcome') in ['soft_fail', 'hard_fail']]
+                                         ^^^^^
+  File "C:\Users\Aarnav\AppData\Roaming\Python\Python313\site-packages\pydantic\main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'TransactionSignal' object has no attribute 'get'
+
+2026-02-01 12:18:20,699 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:18:20,700 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:18:20,700 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:18:28,750 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:18:28,751 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:18:28,752 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:18:36,733 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:18:36,734 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:18:36,734 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:18:44,778 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:18:44,778 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:18:44,778 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:18:52,840 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:18:52,840 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:18:52,840 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:19:00,881 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:19:00,881 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:19:00,882 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:19:08,935 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Legitimate transactions blocked, revenue loss
+2026-02-01 12:19:08,935 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Users unable to complete purchases, cart abandonment
+2026-02-01 12:19:08,935 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Suppression persists beyond recovery, manual intervention needed
+2026-02-01 12:20:12,650 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:20:12,650 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:20:12,651 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:20:12,651 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:20:12,651 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:21:00,994 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:21:00,994 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:21:00,995 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:21:00,995 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:21:00,995 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:23:18,757 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:23:18,757 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:23:18,758 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:23:18,759 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:23:18,759 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:24:06,912 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:24:06,913 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:24:06,914 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:24:06,915 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:24:06,915 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:27:05,152 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:27:05,153 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:27:05,155 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:27:05,156 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:27:05,156 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:27:53,583 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:27:53,583 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:27:53,584 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:27:53,585 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:27:53,585 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:31:02,939 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:31:02,940 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:31:02,941 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:31:02,941 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:31:02,942 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
+2026-02-01 12:31:51,288 - payops_ai.decision.policy - WARNING - MINIMUM FREQUENCY RULE TRIGGERED (cycle 6) but no action options available
+2026-02-01 12:31:51,288 - payops_ai.decision.policy - WARNING - Generating baseline ALERT_OPS action to satisfy minimum frequency requirement
+2026-02-01 12:31:51,290 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Alert fatigue, genuine issues ignored
+2026-02-01 12:31:51,290 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Ops team overwhelmed during incident
+2026-02-01 12:31:51,290 - payops_ai.action.pre_mortem - WARNING -   Worst-case: Delayed response due to unclear alert
