@@ -1,0 +1,212 @@
+{
+  "current_beliefs": {
+    "active_hypotheses": [],
+    "system_health_score": 1.0,
+    "uncertainty_level": 0.0,
+    "last_updated": 1769927086565
+  },
+  "active_interventions": [
+    {
+      "success": true,
+      "intervention_id": "3cdff5b0-a00d-4513-8b69-e88cea7267a8",
+      "executed_at": 1769927014062,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    },
+    {
+      "success": true,
+      "intervention_id": "324eb068-0b52-4f89-b0c7-d868e6b5dea2",
+      "executed_at": 1769927062403,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    }
+  ],
+  "recent_observations": {
+    "transactions": [
+      {
+        "transaction_id": "txn_1769927075695_80117",
+        "timestamp": 1769927078050,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 255,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_2",
+        "amount": 925.2866256737099,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80118",
+        "timestamp": 1769927078100,
+        "outcome": "soft_fail",
+        "error_code": "ERR_4551",
+        "latency_ms": 193,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_18",
+        "amount": 73.30364739876869,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80119",
+        "timestamp": 1769927078150,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 200,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_16",
+        "amount": 293.05273774126186,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80120",
+        "timestamp": 1769927078201,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 300,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_4",
+        "amount": 534.2471473909412,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80121",
+        "timestamp": 1769927078251,
+        "outcome": "hard_fail",
+        "error_code": "ERR_7917",
+        "latency_ms": 149,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_1",
+        "amount": 750.4849694003983,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80122",
+        "timestamp": 1769927078301,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 249,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_13",
+        "amount": 215.58583729249563,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80123",
+        "timestamp": 1769927078351,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 237,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_20",
+        "amount": 757.42350373867,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80124",
+        "timestamp": 1769927078401,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 250,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_19",
+        "amount": 798.2841400182547,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80125",
+        "timestamp": 1769927078451,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 201,
+        "retry_count": 1,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_5",
+        "amount": 300.3895549670999,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927075695_80126",
+        "timestamp": 1769927078501,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 235,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_11",
+        "amount": 924.169479956863,
+        "geography": "ASIA"
+      }
+    ],
+    "time_range_ms": [
+      1769927078050,
+      1769927086565
+    ],
+    "aggregate_stats": {
+      "total_transactions": 6831,
+      "success_count": 6280,
+      "soft_fail_count": 390,
+      "hard_fail_count": 161,
+      "success_rate": 0.9193383106426585,
+      "avg_latency_ms": 203.2198799590104,
+      "p95_latency_ms": 300.0,
+      "p99_latency_ms": 341.0,
+      "avg_retry_count": 0.10628019323671498,
+      "unique_issuers": 4,
+      "unique_methods": 1
+    }
+  },
+  "model_parameters": {
+    "anomaly_threshold": 2.0,
+    "min_confidence_for_action": 0.7,
+    "max_blast_radius_for_autonomy": 0.3,
+    "learning_rate": 0.1,
+    "conservativeness_level": 0.5
+  },
+  "last_updated": 1769927086565,
+  "nrv_projection": 0.0,
+  "z_score": 0.0,
+  "risk_acknowledged": false
+}

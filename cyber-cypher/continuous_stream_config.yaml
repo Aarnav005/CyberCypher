@@ -1,0 +1,64 @@
+# Configuration for Continuous Payment Stream Simulation
+
+# Stochastic drift parameters
+drift:
+  theta: 0.1              # Mean reversion strength (0.0-1.0, higher = faster return to normal)
+  sigma: 0.05             # Overall volatility (lower = more stable)
+  mean_success: 0.95      # Long-term mean success rate
+  mean_latency: 200.0     # Long-term mean latency (ms)
+  mean_retry: 0.05        # Long-term mean retry probability
+  
+  # Per-parameter volatility
+  sigma_success: 0.05     # Success rate volatility (lower = more stable)
+  sigma_latency: 20.0     # Latency volatility (ms) (lower = more stable)
+  sigma_retry: 0.02       # Retry probability volatility (lower = more stable)
+  
+  # Retry storm parameters
+  retry_spike_prob: 0.01  # Probability of retry spike per second (lower = less frequent)
+  retry_spike_magnitude: 0.2  # Magnitude of retry spike (lower = less severe)
+  retry_decay_rate: 0.99  # Decay rate for retry probability (higher = faster recovery)
+
+# Issuer initial states
+issuers:
+  HDFC:
+    initial_success: 0.95
+    initial_latency: 200
+    initial_retry_prob: 0.05
+  ICICI:
+    initial_success: 0.97
+    initial_latency: 180
+    initial_retry_prob: 0.03
+  AXIS:
+    initial_success: 0.93
+    initial_latency: 220
+    initial_retry_prob: 0.07
+  SBI:
+    initial_success: 0.94
+    initial_latency: 210
+    initial_retry_prob: 0.06
+
+# Payment generator parameters
+generator:
+  transaction_rate: 20    # Transactions per second
+  buffer_size: 1000       # Maximum buffer size
+
+# Agent parameters
+agent:
+  cycle_interval: 8       # Seconds between agent cycles (REDUCED from 15)
+  window_duration_ms: 300000  # Observation window (5 minutes)
+  anomaly_threshold: 2.0  # Z-score threshold for anomaly detection
+  min_confidence: 0.7     # Minimum confidence for autonomous action
+  max_blast_radius: 0.3   # Maximum blast radius for autonomous action
+  min_action_frequency_cycles: 6  # Guarantee at least one action every N cycles
+
+# Simulation parameters
+simulation:
+  time_scale: 1.0         # Time multiplier (1.0 = real-time, 10.0 = 10x speed)
+  duration_seconds: 150   # Total simulation duration (15 cycles × 8s = 120s + buffer = 150s)
+  loop_rate: 10.0         # Main loop frequency (Hz)
+  checkpoint_cycles: 15   # Pause after this many cycles to ask user
+
+# Logging
+logging:
+  level: WARNING          # Only show warnings and errors (suppress INFO/DEBUG)
+  format: "%(message)s"   # Simple format without timestamps

@@ -1,0 +1,192 @@
+{
+  "current_beliefs": {
+    "active_hypotheses": [],
+    "system_health_score": 1.0,
+    "uncertainty_level": 0.0,
+    "last_updated": 1769927054332
+  },
+  "active_interventions": [
+    {
+      "success": true,
+      "intervention_id": "3cdff5b0-a00d-4513-8b69-e88cea7267a8",
+      "executed_at": 1769927014062,
+      "expires_at": null,
+      "rollback_conditions": [
+        {
+          "type": "time_based",
+          "threshold": null,
+          "metric": null,
+          "description": "Manual rollback only"
+        }
+      ],
+      "actual_parameters": {
+        "severity": "low",
+        "reason": "minimum_action_frequency",
+        "message": "No anomalies detected but minimum action frequency rule triggered"
+      },
+      "error": null
+    }
+  ],
+  "recent_observations": {
+    "transactions": [
+      {
+        "transaction_id": "txn_1769927042779_55121",
+        "timestamp": 1769927044489,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 120,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_18",
+        "amount": 775.1774547321405,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55122",
+        "timestamp": 1769927044539,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 95,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_3",
+        "amount": 218.205625190305,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55123",
+        "timestamp": 1769927044590,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 113,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_13",
+        "amount": 986.0662545856769,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55124",
+        "timestamp": 1769927044640,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 119,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_1",
+        "amount": 800.3635950680566,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55125",
+        "timestamp": 1769927044690,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 117,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_19",
+        "amount": 410.76698701268873,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55126",
+        "timestamp": 1769927044741,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 223,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_2",
+        "amount": 13.098032823603567,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55127",
+        "timestamp": 1769927044791,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 185,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_8",
+        "amount": 802.1678828555804,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55128",
+        "timestamp": 1769927044841,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 166,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_1",
+        "amount": 793.100284215286,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55129",
+        "timestamp": 1769927044891,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 117,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "SBI",
+        "merchant_id": "merchant_4",
+        "amount": 561.5435166111565,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769927042779_55130",
+        "timestamp": 1769927044942,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 170,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_15",
+        "amount": 980.8601794196135,
+        "geography": "EU"
+      }
+    ],
+    "time_range_ms": [
+      1769927044489,
+      1769927054332
+    ],
+    "aggregate_stats": {
+      "total_transactions": 7226,
+      "success_count": 6565,
+      "soft_fail_count": 458,
+      "hard_fail_count": 203,
+      "success_rate": 0.908524771657902,
+      "avg_latency_ms": 200.13326875172987,
+      "p95_latency_ms": 302.0,
+      "p99_latency_ms": 360.0,
+      "avg_retry_count": 0.10503736507057847,
+      "unique_issuers": 4,
+      "unique_methods": 1
+    }
+  },
+  "model_parameters": {
+    "anomaly_threshold": 2.0,
+    "min_confidence_for_action": 0.7,
+    "max_blast_radius_for_autonomy": 0.3,
+    "learning_rate": 0.1,
+    "conservativeness_level": 0.5
+  },
+  "last_updated": 1769927054332,
+  "nrv_projection": 0.0,
+  "z_score": 0.0,
+  "risk_acknowledged": false
+}

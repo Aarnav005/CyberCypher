@@ -1,0 +1,171 @@
+{
+  "current_beliefs": {
+    "active_hypotheses": [],
+    "system_health_score": 1.0,
+    "uncertainty_level": 0.0,
+    "last_updated": 1769927006002
+  },
+  "active_interventions": [],
+  "recent_observations": {
+    "transactions": [
+      {
+        "transaction_id": "txn_1769926994178_19399",
+        "timestamp": 1769926998381,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 261,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_13",
+        "amount": 108.30511991263545,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926994178_19400",
+        "timestamp": 1769926998431,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 150,
+        "retry_count": 7,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_5",
+        "amount": 239.85421299866,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19401",
+        "timestamp": 1769926994292,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 156,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_3",
+        "amount": 392.8382292394333,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19402",
+        "timestamp": 1769926994342,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 241,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_18",
+        "amount": 104.3334715760433,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19403",
+        "timestamp": 1769926994392,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 237,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_4",
+        "amount": 12.956881447140137,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19404",
+        "timestamp": 1769926994442,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 335,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "AXIS",
+        "merchant_id": "merchant_2",
+        "amount": 404.26545670866403,
+        "geography": "EU"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19405",
+        "timestamp": 1769926994492,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 175,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_11",
+        "amount": 989.9186885284853,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19406",
+        "timestamp": 1769926994542,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 217,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_15",
+        "amount": 245.55642626224002,
+        "geography": "US"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19407",
+        "timestamp": 1769926994593,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 153,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "HDFC",
+        "merchant_id": "merchant_8",
+        "amount": 511.73704995647864,
+        "geography": "ASIA"
+      },
+      {
+        "transaction_id": "txn_1769926994292_19408",
+        "timestamp": 1769926994643,
+        "outcome": "success",
+        "error_code": null,
+        "latency_ms": 259,
+        "retry_count": 0,
+        "payment_method": "card",
+        "issuer": "ICICI",
+        "merchant_id": "merchant_12",
+        "amount": 368.4886248945295,
+        "geography": "US"
+      }
+    ],
+    "time_range_ms": [
+      1769926998381,
+      1769927006002
+    ],
+    "aggregate_stats": {
+      "total_transactions": 7121,
+      "success_count": 6424,
+      "soft_fail_count": 499,
+      "hard_fail_count": 198,
+      "success_rate": 0.902120488695408,
+      "avg_latency_ms": 199.56916163460187,
+      "p95_latency_ms": 298.0,
+      "p99_latency_ms": 337.0,
+      "avg_retry_count": 0.10925431821373402,
+      "unique_issuers": 4,
+      "unique_methods": 1
+    }
+  },
+  "model_parameters": {
+    "anomaly_threshold": 2.0,
+    "min_confidence_for_action": 0.7,
+    "max_blast_radius_for_autonomy": 0.3,
+    "learning_rate": 0.1,
+    "conservativeness_level": 0.5
+  },
+  "last_updated": 1769927006002,
+  "nrv_projection": 0.0,
+  "z_score": 0.0,
+  "risk_acknowledged": false
+}
